@@ -1,4 +1,5 @@
 const puppeteer = require("puppeteer");
+const URL = "";
 
 const randomString = (length) => {
   const CHARS =
@@ -21,7 +22,7 @@ const randomEmail = `${randomString(6).toLowerCase()}@hireme.com`;
 
   const page = await browser.newPage();
 
-  await page.goto("https://www.nkrdieselparts.com/register");
+  await page.goto(URL);
 
   await page.waitForSelector("input[name=first_name]");
   await page.type("input[name=first_name]", "Alan", { delay: 120 });
