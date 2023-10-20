@@ -48,6 +48,4 @@ const randomEmail = `${randomString(6).toLowerCase()}@hireme.com`;
   await page.click("#my-account-1 a", {
     delay: 820,
   });
-
-  await page.click(".btn-nkr");
 })();
